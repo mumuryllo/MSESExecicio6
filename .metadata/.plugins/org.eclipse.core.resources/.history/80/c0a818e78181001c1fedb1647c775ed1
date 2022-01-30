@@ -1,0 +1,43 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+
+
+<h1> Calculadora </h1>
+
+<form method="post" action="PrimeiroServlet">
+Primeiro Número <br>
+
+<input  type="number" name="n"> <br>
+Segundo Número <br>
+<input  type="number" name="n2"> <br> <br>
+
+
+<button type="submit"  name="somar" >Somar</button> <br> <br> 
+<p>Resultado da soma =  <nobr> ${requestScope.operacao1}</nobr> </p> 
+    
+<button type="submit" name="subtracao" >Subtração</button> <br> <br>
+<p>Resultado da subtração =  <nobr> ${requestScope.operacao2}</nobr> </p> 
+
+<button type="submit" name="multiplicacao" >Multiplicação</button> <br> <br>
+<p>Resultado da multiplicação=  <nobr> ${requestScope.operacao3}</nobr> </p> 
+
+<button type="submit" name="divisao" >Divisão</button> <br> <br>
+<p>Resultado da divisão=  <nobr> ${requestScope.operacao4}</nobr> </p> 
+  
+
+
+<br> <br>
+
+<button type="reset">Limpar</button>
+</form>
+
+
+</body>
+</html>

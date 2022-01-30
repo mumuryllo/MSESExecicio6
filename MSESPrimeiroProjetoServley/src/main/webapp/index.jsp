@@ -14,20 +14,19 @@
 <form method="post" action="PrimeiroServlet">
 Primeiro Número <br>
 
-<input  type="number" name="n"> <br>
+<input  type="text" name="n"> <br>
 Segundo Número <br>
-<input  type="number" name="n2"> <br> <br>
+<input  type="text" name="n2"> <br> <br>
+ 
+ <select name="operacoes">
+ <option value="+">+</option>
+  <option value="-">-</option>
+   <option value="*">*</option>
+    <option value="/">/</option>
+ </select>
 
-<button type="submit" ">Somar</button> <br> <br> 
- <nobr> ${requestScope.operacao1}</nobr>
-<button type="submit" ">Subtração</button> <br> <br>
-<nobr> ${requestScope.operacao2}</nobr>  
-<button type="submit" ">Multiplicação</button> <br> <br>
-<nobr> ${requestScope.operacao3}</nobr>
-<button type="submit" ">Divisão</button> <br> <br>
- <nobr> ${requestScope.operacao4}</nobr> 
-Resultado =     
-     
+<button type="submit"  name="calcular" >CALCULAR</button> <br> <br> 
+Resultado = ${requestScope.res}
 
 <br> <br>
 

@@ -37,19 +37,36 @@ public class PrimeiroServlet extends HttpServlet {
 		// TODO Auto-generated method stub
 		doGet(request, response);
 		
-		int var1 = Integer.parseInt(request.getParameter("n"));
-		int var2 = Integer.parseInt(request.getParameter("n2"));
-		int soma = var1+var2;
-		int subtracao = var1-var2;
-		int multiplicacao = var1*var2;
-		int divisao = var1/var2;
+		double n1 = Double.parseDouble(request.getParameter("n"));
+		double n2 = Double.parseDouble(request.getParameter("n2"));
+		String operacao= request.getParameter("operacoes");
+		double resultado=0.0;
 		
-		request.setAttribute("operacao1", soma); 
-		request.setAttribute("operacao2", subtracao); 
-		request.setAttribute("operacao3", multiplicacao); 
-		request.setAttribute("operacao4", divisao); 
+		
+		Calcular calcular = new Calcular();
+		switch (operacao) {
+		case ("+"):
+			resultado=calcular.soma(n1, n2);
+			break;	
+		case ("-"):
+			resultado=calcular.subtracao(n1, n2);
+			break;
+		case ("*"):
+			resultado=calcular.multiplicacao(n1, n2);
+			break;
+		case ("/"):
+			resultado=calcular.divisao(n1, n2);
+			break;
+		}
+	
+		request.setAttribute("res", resultado); //requestScope – forward
 
+		request.getRequestDispatcher("/").forward(request, response);
+		
+		
+		
 		request.getRequestDispatcher("/").forward(request, response);  
+		
 	}
 
 }
