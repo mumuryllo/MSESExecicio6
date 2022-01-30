@@ -19,15 +19,15 @@ Segundo Número <br>
 <input  type="number" name="n2"> <br> <br>
 
 <button type="submit" ">Somar</button> <br> <br> 
- <nobr> ${requestScope.operacao1}</nobr>
-<button type="submit" ">Subtração</button> <br> <br>
-<nobr> ${requestScope.operacao2}</nobr>  
-<button type="submit" ">Multiplicação</button> <br> <br>
-<nobr> ${requestScope.operacao3}</nobr>
-<button type="submit" ">Divisão</button> <br> <br>
- <nobr> ${requestScope.operacao4}</nobr> 
-Resultado =     
      
+<button type="submit" ">Subtração</button> <br> <br>
+
+<button type="submit" ">Multiplicação</button> <br> <br>
+
+<button type="submit" ">Divisão</button> <br> <br>
+  
+Resultado =  <nobr> ${requestScope.operacao1}</nobr>  <nobr> ${requestScope.operacao2}</nobr>   
+<nobr> ${requestScope.operacao3}</nobr>   <nobr> ${requestScope.operacao4}</nobr>  
 
 <br> <br>
 
