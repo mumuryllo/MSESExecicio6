@@ -1,0 +1,36 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+
+
+<h1> Calculadora que só soma</h1>
+
+<form method="post" action="Servlet">
+Primeiro Número <br>
+
+<input  type="number" name="n"> <br>
+Segundo Número <br>
+
+<input  type="number" name="n"> <br>
+<input type="submit" ">Somar</input>
+<br> <br>
+
+<p>
+
+</p>
+
+<input type="reset">Limpar</input>
+</form>
+
+<script >
+
+</script>
+
+</body>
+</html>
